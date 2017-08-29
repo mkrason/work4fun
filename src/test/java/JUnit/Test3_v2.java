@@ -43,8 +43,8 @@ public class Test3_v2 {
 		animals2.add(cat2);
 		animals2.add(cat2);
 
-		// List<Animal> animals = duplicate2.deleteDuplicate2(animals1,
-		// animals2);
+		List<Animal> animals1 = duplicate2.deleteDuplicate2(animals1, animals2);
+		
 		List<Animal> animals = duplicate2.deleteDuplicateStream(animals1, animals2);
 
 		assertEquals(6, animals.size());

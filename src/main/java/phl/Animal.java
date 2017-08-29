@@ -1,6 +1,6 @@
 package phl;
 
-public class Animal {
+public class Animal implements Comparable<Animal> {
 
 	private String name;
 
@@ -56,6 +56,12 @@ public class Animal {
 		} else if (!sound.equals(other.sound))
 			return false;
 		return true;
+	}
+
+	@Override
+	public int compareTo(Animal o) {
+		// TODO Auto-generated method stub
+		return 0;
 	}
 
 }
