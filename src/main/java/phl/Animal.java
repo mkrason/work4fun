@@ -1,9 +1,9 @@
 package phl;
 
 public class Animal {
-	
+
 	private String name;
-	
+
 	private String sound;
 
 	public String getName() {
@@ -57,7 +57,5 @@ public class Animal {
 			return false;
 		return true;
 	}
-	
-	
-	
+
 }
