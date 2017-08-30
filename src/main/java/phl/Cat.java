@@ -1,9 +1,9 @@
 package phl;
 
-public class Cat extends Animal{
-	
+public class Cat extends Animal {
+
 	private Integer caughtMouses;
-		
+
 	public Integer getCaughtMouses() {
 		return caughtMouses;
 	}
@@ -12,7 +12,7 @@ public class Cat extends Animal{
 		this.caughtMouses = caughtMouses;
 	}
 
-	public Cat(String name, String sound, Integer caughtMouses){
+	public Cat(String name, String sound, Integer caughtMouses) {
 		this.setName(name);
 		this.setSound(sound);
 	}

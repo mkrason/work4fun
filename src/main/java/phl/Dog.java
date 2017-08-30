@@ -1,6 +1,6 @@
 package phl;
 
-public class Dog extends Animal{
+public class Dog extends Animal {
 
 	private Integer bones;
 
@@ -49,5 +49,5 @@ public class Dog extends Animal{
 			return false;
 		return true;
 	}
-	
+
 }

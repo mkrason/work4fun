@@ -1,9 +1,9 @@
 package phl;
 
-public class Animal {
-	
+public class Animal implements Comparable<Animal> {
+
 	private String name;
-	
+
 	private String sound;
 
 	public String getName() {
@@ -57,7 +57,11 @@ public class Animal {
 			return false;
 		return true;
 	}
-	
-	
-	
+
+	@Override
+	public int compareTo(Animal o) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
 }

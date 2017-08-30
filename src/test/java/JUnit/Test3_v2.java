@@ -10,14 +10,14 @@ import org.junit.Test;
 import phl.Animal;
 import phl.Cat;
 import phl.Dog;
-import phl.Duplicate;
+import phl.Duplicate2;
 
-public class Test3 {
+public class Test3_v2 {
 
 	@Test
 	public void test3deleteDuplicate() {
 
-		Duplicate<Animal> duplicate = new Duplicate<>();
+		Duplicate2 duplicate2 = new Duplicate2();
 
 		List<Animal> animals1 = new ArrayList<>();
 		List<Animal> animals2 = new ArrayList<>();
@@ -33,6 +33,7 @@ public class Test3 {
 		animals1.add(cat1);
 		animals1.add(cat2);
 		animals1.add(cat3);
+		animals1.add(cat3);
 
 		animals2.add(dog1);
 		animals2.add(dog2);
@@ -42,7 +43,9 @@ public class Test3 {
 		animals2.add(cat2);
 		animals2.add(cat2);
 
-		List<Animal> animals = duplicate.deleteDuplicate(animals1, animals2);
+		List<Animal> animals1 = duplicate2.deleteDuplicate2(animals1, animals2);
+		
+		List<Animal> animals = duplicate2.deleteDuplicateStream(animals1, animals2);
 
 		assertEquals(6, animals.size());
 
