@@ -51,7 +51,7 @@ public class Test3_v2 {
 		
 		List<Animal> animals = duplicate2.deleteDuplicateStream(animals1, animals2);
 
-//		assertEquals(6, animalsBySet.size());
+		assertEquals(7, animalsBySet.size());
 		assertEquals(7, animals.size());
 
 	}

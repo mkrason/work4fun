@@ -60,8 +60,9 @@ public class Animal implements Comparable<Animal> {
 
 	@Override
 	public int compareTo(Animal o) {
-		// TODO Auto-generated method stub
-		return 0;
+		int byName = name.compareTo(o.name);
+
+		return byName;
 	}
 
 }
